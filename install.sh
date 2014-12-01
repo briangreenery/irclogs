@@ -5,11 +5,10 @@ apt-get update
 # Install some prerequisites
 apt-get install -y curl
 
-# Install node
+# Install node & compass & php stuffs
 curl -sL https://deb.nodesource.com/setup | bash -
 apt-get install -y \
   nodejs \
-  git \
   ruby-compass \
   php5-cli php5-dev php-pear php5-mcrypt \
   libsasl2-dev mongodb
