@@ -12,7 +12,7 @@ http://irclogs.laravel.io
 ```bash
 $ composer install
 $ bower install
-$ forever start main.js
+$ npm install
 ```
 
 ### Sample log data
