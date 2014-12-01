@@ -1,5 +1,5 @@
 # irclogs
-#### A logger for #laravel, built with Laravel and MongoDB
+#### An IRC logger, built with Laravel and MongoDB
 
 http://irclogs.laravel.io
 
@@ -9,11 +9,27 @@ http://irclogs.laravel.io
 
 ### Install
 
+The vagrant box will automatically run these install commands.
+
 ```bash
 $ composer install
 $ bower install
 $ npm install
 ```
+
+### Run
+
+Run the logger bot:
+
+```bash
+forever start main.js
+```
+
+Run the php server:
+
+````
+php artisan serve --host 0.0.0.0
+````
 
 ### Sample log data
 

@@ -2,11 +2,13 @@ set -e
 
 apt-get update
 
-# Install some prerequisites
+# Install curl
 apt-get install -y curl
 
-# Install node & compass & php stuffs
+# Install node source
 curl -sL https://deb.nodesource.com/setup | bash -
+
+# Install more things
 apt-get install -y \
   nodejs \
   ruby-compass \
@@ -31,7 +33,7 @@ npm install -g forever bower
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
-# Get the irclogs repo
+# Copy irclogs source
 mkdir /home/vagrant/irclogs
 cp -r /vagrant /home/vagrant
 mv /home/vagrant/vagrant /home/vagrant/irclogs
