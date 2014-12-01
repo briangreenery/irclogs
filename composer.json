@@ -1,9 +1,9 @@
 {
 	"require": {
-		"laravel/framework" : "dev-master#aa9d374c8451576356b792c193eceefc8d0a96fa",
+		"laravel/framework" : "4.0.x",
 		"fzaninotto/faker"  : "dev-master",
 		"jasonlewis/basset" : "dev-master",
-		"julien-c/mongovel" : "dev-master"
+		"julien-c/mongovel" : "dev-master#f32fa9788df522b8ef89da8ba4c3abc0583b9255"
 	},
 	"autoload": {
 		"classmap": [

@@ -2,6 +2,7 @@
 *.sublime-workspace
 .DS_Store
 .sass-cache
+.vagrant
 /vendor
 /node_modules
 /bootstrap/compiled.php
