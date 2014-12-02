@@ -8,7 +8,7 @@
 <body>
 
 	<header class="header">
-		<input name="search" value="{{ isset($search) ? $search : null }}" class="header-search" action="{{ URL::to('search/') }}" contenteditable placeholder="BigFix IRC logs" autofocus autocomplete="off" spellcheck="false">
+		<input name="search" value="{{ isset($search) ? $search : null }}" class="header-search" action="{{ URL::to('search/') }}" contenteditable placeholder="Search #platdev" autofocus autocomplete="off" spellcheck="false">
 		<div class="links">
 			Powered by <a href="http://glose.com">Glose</a> · <a href="http://github.com/briangreenery/irclogs" target="_blank">Fork on Github</a>
 		</div>

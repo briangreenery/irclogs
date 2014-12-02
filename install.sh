@@ -10,6 +10,7 @@ curl -sL https://deb.nodesource.com/setup | bash -
 
 # Install more things
 apt-get install -y \
+  git \
   nodejs \
   ruby-compass \
   php5-cli php5-dev php-pear php5-mcrypt \
@@ -34,15 +35,18 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
 # Copy irclogs source
-mkdir /home/vagrant/irclogs
 cp -r /vagrant /home/vagrant
 mv /home/vagrant/vagrant /home/vagrant/irclogs
 
-# Install all the things
 cd irclogs
+
+# Install all the things
 composer install
 bower install --allow-root
 npm install
+
+# Create fake data
+php artisan db:seed
 
 # Fix permissions
 chown -R vagrant:vagrant /home/vagrant

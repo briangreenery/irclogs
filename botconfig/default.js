@@ -3,7 +3,7 @@ var mongojs = require('mongojs');
 
 module.exports = {
 	client: new irc.Client('platdev.sfolab.ibm.com', 'logbot', {
-		channels: ['#platdev','#webconsole'],
+		channels: ['#platdev'],
 	}),
 	logs: mongojs('irclogs').collection('logs'),
 	hipchat: null,

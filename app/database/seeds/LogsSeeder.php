@@ -23,7 +23,7 @@ class LogsSeeder extends Seeder
 	 */	
 	public function run()
 	{
-		for ($i = 0; $i < 300000; $i++) {
+		for ($i = 0; $i < 10000; $i++) {
 			$this->generate();
 		}
 	}
