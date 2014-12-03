@@ -44,7 +44,8 @@ Run the web server:
 $ php artisan serve --host 0.0.0.0
 ````
 
-You can then access the web server at http://localhost:8000 on the host machine.
+You can then access the web server at
+[http://localhost:8000](http://localhost:8000) on the host machine.
 
 Run the irc logger bot:
 
@@ -52,7 +53,7 @@ Run the irc logger bot:
 $ node main.js
 ```
 
-Compile css:
+Compile CSS if you change it:
 
 ```bash
 $ compass compile
