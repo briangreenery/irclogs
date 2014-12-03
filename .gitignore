@@ -6,5 +6,6 @@
 /vendor
 /node_modules
 /bootstrap/compiled.php
+/public/builds
 /public/components
 /botconfig/local.js

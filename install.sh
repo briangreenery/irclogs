@@ -33,20 +33,3 @@ npm install -g forever bower
 # Install composer
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
-
-# Copy irclogs source
-cp -r /vagrant /home/vagrant
-mv /home/vagrant/vagrant /home/vagrant/irclogs
-
-cd irclogs
-
-# Install all the things
-composer install
-bower install --allow-root
-npm install
-
-# Create fake data
-php artisan db:seed
-
-# Fix permissions
-chown -R vagrant:vagrant /home/vagrant
